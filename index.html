@@ -1,0 +1,69 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Project Two</title>
+
+</head>
+<body>
+
+<div class="container h-100" id="pageContainer">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="applicant_container col-12 col-md-6 pb-5 text-center">
+            <div class="mb-5">
+                <svg width="100" height="100" class="eye">
+                    <circle cx="50" cy="50" r="50" fill="white" class="eyeball"/>
+                    <circle cx="50" cy="50" r="30" fill="#0D0D20" class="pupil"/>
+                </svg>
+            </div>
+            <h1>Who Should Pay The Bill?</h1>
+            <div class="applicant_input position-relative my-3">
+                <input type="text" class="w-100 p-3 fs-3 text-uppercase" id="applicant_value" placeholder="Enter Hero" autocomplete="off">
+                <button class="btn btn-primary position-absolute text-uppercase" id="add_applicant">Add</button>
+            </div>
+            <button class="btn text-white w-100 bg-purple text-center remove-all-applicants">Remove all</button>
+            <div class="applicant_list">
+                <div class="fs-3 text-uppercase">Hero's Hall</div>
+                <span class="tapToRemove badge bg-default border fs-6">Tap Hero To Remove From Hall</span>
+                <div class="applicant_list_wrapper row d-flex justify-content-center align-item-center"></div>
+            </div>
+            <div class="button_container">
+                <button id="show_results" class="btn btn-danger btn-lg text-uppercase">Find the Hero!</button>
+            </div>
+        </div>
+
+        <div class="showResultContainer d-none">
+            <div class="animated">
+                <div class="text-uppercase">The Hero is</div>
+                <div class="result text-uppercase fs-1"></div>
+
+                <div class="results_action">
+                    <button class="run_again btn btn-primary">Run it again</button>
+                    <button class="start_again btn btn-warning">Start again</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>
+<div class="timer text-white bg-black d-none" id="timer-container">
+    <div class="text-center d-flex flex-column justify-content-center align-items-center">
+        <img src="assets/images/expressionless-svgrepo-com.svg" alt="Poker Face" class="fs-1 poker__face--img">
+        <p id="joke" class="fs-4 py-5" ></p>
+        <div class="fs-1 pt-5" id="timerId"></div>
+    </div>
+</div>
+</body>
+
+<script src="assets/js/main.js"></script>
+
+</html>
